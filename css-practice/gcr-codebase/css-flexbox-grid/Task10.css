@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 5%;
+    background-color: #0f172a;
+    color: white;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: #7dd3fc;
+}
+
+/* Grid creates the article and sidebar columns. */
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 25px;
+    align-items: start;
+}
+
+.main-article {
+    min-width: 0;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    outline: 2px solid rgba(59, 130, 246, 0.15);
+}
+
+.animated-title {
+    color: #1d4ed8;
+    animation: slideIn 0.8s ease both;
+}
+
+.main-article > p {
+    line-height: 1.8;
+}
+
+.features {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.feature {
+    position: relative;
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.feature h3 {
+    color: #1d4ed8;
+}
+
+.feature p {
+    line-height: 1.6;
+}
+
+.sidebar {
+    padding: 25px;
+    background-color: #dbeafe;
+    border-radius: 12px;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #1d4ed8;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 750px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header nav {
+        justify-content: center;
+    }
+}

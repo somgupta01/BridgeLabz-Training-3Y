@@ -1,0 +1,92 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #172554;
+}
+
+header {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+nav {
+    padding: 18px;
+    text-align: center;
+    background-color: #fef3c7;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #78350f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    min-height: 350px;
+    padding: 70px 10%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 4px solid white;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.history {
+    background-image: linear-gradient(
+        120deg, #bfdbfe, #fef3c7
+    );
+}
+
+.culture {
+    background-image: radial-gradient(
+        circle, #fef3c7, #fdba74, #ea580c
+    );
+    color: #431407;
+}
+
+.places {
+    background-image: linear-gradient(
+        135deg, #bbf7d0, #a5f3fc
+    );
+}
+
+footer {
+    padding: 20px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 40px 6%;
+        background-attachment: scroll;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+}

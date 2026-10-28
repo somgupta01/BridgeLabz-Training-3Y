@@ -1,0 +1,86 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #f1f5f9;
+}
+
+header, footer {
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: #0f172a;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding: 35px 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.principle-card {
+    padding: 24px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px #cbd5e1;
+    transition: background 0.4s ease, color 0.4s ease,
+                transform 0.3s ease;
+}
+
+.principle-card h2 {
+    color: #1d4ed8;
+    transition: color 0.4s ease;
+}
+
+.principle-card p {
+    line-height: 1.7;
+}
+
+/* Format CSS code examples */
+pre {
+    padding: 12px;
+    overflow-x: auto;
+    border-radius: 7px;
+    background: #e2e8f0;
+    color: #7c2d12;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* Gradient and text-color change on hover */
+.principle-card:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.principle-card:hover h2 {
+    color: #fef08a;
+}
+
+.principle-card:hover pre {
+    background: rgba(255, 255, 255, 0.95);
+    color: #1e293b;
+}
+
+@media (max-width: 900px) {
+    .principles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .principles {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

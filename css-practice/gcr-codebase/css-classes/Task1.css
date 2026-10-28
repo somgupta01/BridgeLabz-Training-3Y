@@ -1,0 +1,88 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 35px 20px;
+}
+
+.example {
+    width: 240px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #cbd5e1;
+}
+
+.example h2 {
+    color: #2563eb;
+}
+
+/* :hover changes the link appearance */
+a:hover {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+/* :focus highlights the input */
+input:focus {
+    outline: 3px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+}
+
+/* :active applies while the button is pressed */
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    background: #1e3a8a;
+    transform: scale(0.95);
+}
+
+/* :nth-child styles alternating list items */
+li {
+    margin: 5px 0;
+    padding: 8px;
+    background: #f8fafc;
+}
+
+li:nth-child(even) {
+    background: #bfdbfe;
+}
+
+.example p {
+    line-height: 1.5;
+}

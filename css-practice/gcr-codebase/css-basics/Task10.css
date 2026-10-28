@@ -1,0 +1,194 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: #0f172a;
+    color: white;
+}
+
+.header h1 {
+    font-size: 1.4rem;
+}
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: #7dd3fc;
+}
+
+/* Hero uses a background image with a dark gradient overlay. */
+.hero {
+    position: relative;
+    min-height: 75vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.65),
+                        rgba(15, 23, 42, 0.65)),
+        url("https://placehold.co/1600x800?text=Creative+Workspace");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 750px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 3px;
+}
+
+.about {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    position: relative;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    font-size: 2rem;
+    color: #075985;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.about img {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.services {
+    padding: 55px 6%;
+    text-align: center;
+    background-image: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+}
+
+.service-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service {
+    position: relative;
+    flex: 1;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #bae6fd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service p {
+    line-height: 1.7;
+}
+
+.contact {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 2px solid #7dd3fc;
+    border-color: #0284c7;
+}
+
+.contact button {
+    margin-top: 18px;
+    padding: 12px 22px;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}   

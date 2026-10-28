@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="Task9.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Principles</h1>
+        <p>Three important principles for building flexible websites.</p>
+    </header>
+
+    <main class="principles">
+        <article class="principle-card">
+            <h2>Fluid Layouts</h2>
+            <p>
+                Fluid layouts use relative sizes so content adjusts to
+                the available screen width.
+            </p>
+            <pre><code>.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}</code></pre>
+        </article>
+
+        <article class="principle-card">
+            <h2>Flexible Media</h2>
+            <p>
+                Flexible images shrink to fit their containers without
+                overflowing the layout.
+            </p>
+            <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+        </article>
+
+        <article class="principle-card">
+            <h2>Breakpoints</h2>
+            <p>
+                Breakpoints let the layout change when the screen
+                reaches a specified width.
+            </p>
+            <pre><code>@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}</code></pre>
+        </article>
+    </main>
+
+    <footer>Responsive Design Learning Page</footer>
+</body>
+</html>

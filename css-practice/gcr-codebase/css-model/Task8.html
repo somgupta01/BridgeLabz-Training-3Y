@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="Task8.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box Model Exploration</h1>
+        <p>Understand content, padding, border, and margin.</p>
+    </header>
+
+    <main class="container">
+        <section class="demo">
+            <div class="margin-layer">
+                <span class="layer-label">Margin</span>
+
+                <div class="border-layer">
+                    <span class="layer-label">Border</span>
+
+                    <div class="padding-layer">
+                        <span class="layer-label">Padding</span>
+
+                        <div class="content-layer">
+                            <h2>Content</h2>
+                            <p>This is the actual content area.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <article class="comparison-card">
+                <h2>Default Box Model</h2>
+                <div class="default-box">Width: 200px</div>
+                <p>Padding and border are added to the declared width.</p>
+            </article>
+
+            <article class="comparison-card">
+                <h2>Border-box Model</h2>
+                <div class="border-box">Width: 200px</div>
+                <p>Padding and border are included in the declared width.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>CSS Box Model Practice</footer>
+</body>
+</html>

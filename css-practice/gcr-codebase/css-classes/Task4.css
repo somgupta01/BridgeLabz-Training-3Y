@@ -1,0 +1,95 @@
+
+/* Universal selector: applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+.container {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* Class selector */
+.highlight {
+    padding: 10px;
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* ID selector */
+#special {
+    padding: 10px;
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid #2563eb;
+}
+
+input[type="email"] {
+    border: 2px solid #9333ea;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Child combinator: direct p child */
+.topic-box > p {
+    color: #15803d;
+    font-weight: bold;
+}
+
+/* Descendant combinator: any p inside topic-box */
+.topic-box p {
+    padding: 8px;
+    background: #ecfdf5;
+}
+
+/* Adjacent sibling combinator */
+h3 + p {
+    color: #7c3aed;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+    border-left: 3px solid #a78bfa;
+    padding-left: 10px;
+}
+
+li {
+    margin: 6px 0;
+    padding: 8px;
+    background: #e2e8f0;
+}
+
+a {
+    color: #0369a1;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #dc2626;
+}

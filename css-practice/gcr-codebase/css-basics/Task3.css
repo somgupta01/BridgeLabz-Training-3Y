@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+.card {
+    flex: 1;
+    max-width: 350px;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.card h2 {
+    color: #1d4ed8;
+}
+
+.card h3 {
+    color: #64748b;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.leader {
+    background-color: #dbeafe;
+    border: 3px solid #2563eb;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+/* Stack cards on small screens. */
+@media (max-width: 599px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+    }
+}

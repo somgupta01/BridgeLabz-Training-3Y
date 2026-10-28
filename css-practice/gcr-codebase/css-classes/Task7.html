@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components</title>
+    <link rel="stylesheet" href="Task7.css">
+</head>
+<body>
+    <header>
+        <h1>UI Components</h1>
+        <p>A simple interface with reusable controls.</p>
+    </header>
+
+    <main class="ui-card">
+        <h2>Find Something</h2>
+
+        <form class="search-form" action="#" method="get">
+            <label for="search">Search</label>
+            <input type="search" id="search" name="search"
+                   placeholder="Search here...">
+            <button class="btn search-btn" type="submit">Search</button>
+        </form>
+
+        <section class="action-section">
+            <h3>Quick Actions</h3>
+            <div class="button-row">
+                <button class="btn primary" type="button">Save</button>
+                <button class="btn secondary" type="button">Cancel</button>
+            </div>
+        </section>
+
+        <section class="dropdown-section">
+            <label for="category">Choose a category</label>
+            <select id="category" name="category">
+                <option value="">Select an option</option>
+                <option value="design">Design</option>
+                <option value="development">Development</option>
+                <option value="data">Data Science</option>
+            </select>
+        </section>
+    </main>
+
+    <footer>UI Components Practice</footer>
+</body>
+</html>

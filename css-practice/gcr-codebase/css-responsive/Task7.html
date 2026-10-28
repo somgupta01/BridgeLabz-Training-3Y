@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Responsive Web Demo</title>
+    <link rel="stylesheet" href="Task7.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Responsive Web Lab</h1>
+        <nav aria-label="Main navigation">
+            <a href="#gallery">Gallery</a>
+            <a href="#responsive">Responsive Design</a>
+            <a href="#cheat-sheet">Cheat Sheet</a>
+        </nav>
+    </header>
+
+    <main class="demo-grid">
+        <section id="gallery" class="demo-section gallery-section">
+            <h2>Image Gallery</h2>
+            <div class="mini-gallery">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80" alt="Mountain landscape">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Beach">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=500&q=80" alt="Forest">
+            </div>
+            <p>Images fit into a responsive grid.</p>
+        </section>
+
+        <section id="responsive" class="demo-section">
+            <h2>Responsive Design</h2>
+            <p>
+                Responsive design helps a website adjust its layout,
+                images, and typography to fit phones, tablets, and desktops.
+            </p>
+            <ul>
+                <li>Use flexible layouts.</li>
+                <li>Apply media queries.</li>
+                <li>Scale images to fit their containers.</li>
+            </ul>
+        </section>
+
+        <section id="cheat-sheet" class="demo-section">
+            <h2>Cheat Sheet Preview</h2>
+            <div class="preview-item">
+                <strong>Grid</strong>
+                <code>display: grid;</code>
+            </div>
+            <div class="preview-item">
+                <strong>Flexbox</strong>
+                <code>display: flex;</code>
+            </div>
+            <div class="preview-item">
+                <strong>Media Query</strong>
+                <code>@media (max-width: 700px)</code>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: hello@gmail.com | Responsive Web Lab</p>
+    </footer>
+</body>
+</html>

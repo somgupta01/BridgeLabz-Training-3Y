@@ -1,0 +1,103 @@
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* Element selector */
+header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #1e3a8a;
+}
+
+.container {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* Descendant combinator: all paragraphs inside intro */
+.intro p {
+    line-height: 1.6;
+}
+
+/* Child combinator: direct h2 children of sections */
+section > h2 {
+    color: #1d4ed8;
+}
+
+/* Adjacent sibling combinator: p immediately after h2 */
+.intro h2 + p {
+    color: #15803d;
+}
+
+/* General sibling combinator: paragraphs after h2 */
+.intro h2 ~ p {
+    padding-left: 10px;
+    border-left: 3px solid #93c5fd;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid #2563eb;
+}
+
+/* Another attribute selector */
+input[type="email"] {
+    border: 2px solid #9333ea;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* Pseudo-class: focus */
+input:focus {
+    outline: 3px solid #bfdbfe;
+}
+
+/* Pseudo-class: nth-child */
+li:nth-child(odd) {
+    background: #dbeafe;
+}
+
+li {
+    margin: 6px 0;
+    padding: 10px;
+}
+
+/* Attribute selector: links starting with https */
+a[href^="https"] {
+    color: #047857;
+    font-weight: bold;
+}
+
+/* Pseudo-class: hover */
+a:hover {
+    color: #dc2626;
+}
+
+/* Pseudo-element: before */
+.list-section h2::before {
+    content: "★ ";
+    color: #f59e0b;
+}
+
+/* Pseudo-element: after */
+.links h2::after {
+    content: " →";
+    color: #ea580c;
+}

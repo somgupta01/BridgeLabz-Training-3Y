@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+.button-container {
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 35px 20px;
+}
+
+.button-example {
+    width: 200px;
+    padding: 22px 15px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #cbd5e1;
+}
+
+.btn {
+    padding: 12px 22px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+/* Secondary button */
+.secondary {
+    background: #475569;
+    color: white;
+}
+
+/* Outline button */
+.outline {
+    border-color: #2563eb;
+    background: transparent;
+    color: #2563eb;
+}
+
+/* Hover effects */
+.primary:hover, .secondary:hover {
+    filter: brightness(0.85);
+    transform: translateY(-3px);
+}
+
+.outline:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Active effect while pressing */
+.btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+/* Visible keyboard focus */
+.btn:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 4px;
+}
+
+/* Disabled state */
+.btn:disabled {
+    background: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.button-example p {
+    line-height: 1.5;
+}

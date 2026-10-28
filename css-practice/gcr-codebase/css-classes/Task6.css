@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+.animation-container {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 35px 20px;
+}
+
+.animation-card {
+    width: 260px;
+    min-height: 260px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #cbd5e1;
+}
+
+.animation-card h2 {
+    font-size: 20px;
+}
+
+/* Moving box animation */
+.moving-box {
+    width: 50px;
+    height: 50px;
+    margin: 35px 0;
+    background: #2563eb;
+    border-radius: 8px;
+    animation: moveBox 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(150px);
+    }
+}
+
+/* Bouncing ball animation */
+.ball {
+    width: 45px;
+    height: 45px;
+    margin: 35px auto;
+    border-radius: 50%;
+    background: #f97316;
+    animation: bounce 0.8s ease-in-out infinite alternate;
+    animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(45px);
+    }
+}
+
+/* Color-changing text animation */
+.color-text {
+    margin: 40px 0;
+    font-size: 24px;
+    font-weight: bold;
+    animation: colorChange 3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: #2563eb;
+    }
+    to {
+        color: #db2777;
+    }
+}

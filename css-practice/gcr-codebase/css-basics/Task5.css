@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    padding: 35px 15px;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.pricing {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 5%;
+}
+
+.plan {
+    flex: 1;
+    max-width: 350px;
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.04);
+    background-color: #eff6ff;
+}
+
+.popular {
+    border: 3px solid #2563eb;
+    background-color: #dbeafe;
+}
+
+.tag {
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.price small {
+    font-size: 0.9rem;
+}
+
+.plan ul {
+    padding-left: 25px;
+    text-align: left;
+    line-height: 2.2;
+    flex-grow: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #1d4ed8;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #1e40af;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+    }
+}

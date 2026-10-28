@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5d0fe);
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+.ui-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(30, 41, 59, 0.15);
+}
+
+.ui-card h2 {
+    margin: 0;
+    color: #1d4ed8;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 7px;
+    font: inherit;
+    background: white;
+}
+
+/* Highlight focused input and dropdown */
+input:focus, select:focus {
+    outline: 3px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.btn {
+    padding: 11px 18px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary, .search-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px #cbd5e1;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.dropdown-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 550px) {
+    .ui-card {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+}

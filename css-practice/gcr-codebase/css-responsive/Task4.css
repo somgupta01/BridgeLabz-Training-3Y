@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #f1f5f9;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #1e293b;
+}
+
+header h1 {
+    /* Font scales between minimum and maximum sizes */
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.article {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px #cbd5e1;
+    text-align: center;
+}
+
+.article h2 {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    color: #2563eb;
+}
+
+.article p {
+    /* Required responsive paragraph font size */
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+@media (max-width: 700px) {
+    .article {
+        margin: 20px 15px;
+        padding: 22px;
+    }
+
+    .article p {
+        line-height: 1.7;
+        margin: 15px 0;
+    }
+}

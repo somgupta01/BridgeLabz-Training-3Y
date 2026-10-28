@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 22px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+.effects-container {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 35px 20px;
+}
+
+.effect-card {
+    width: 270px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+/* Transform and shadow change on card hover */
+.effect-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px #94a3b8;
+}
+
+.effect-card h2 {
+    color: #1d4ed8;
+}
+
+.effect-card p {
+    line-height: 1.6;
+    min-height: 50px;
+}
+
+.effect-btn {
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+/* Secondary button */
+.secondary {
+    background: #475569;
+    color: white;
+}
+
+/* Outline button */
+.outline {
+    background: white;
+    border-color: #7c3aed;
+    color: #7c3aed;
+}
+
+/* Pseudo-class: hover */
+.effect-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 12px #cbd5e1;
+    background: #0f172a;
+    color: white;
+    border-color: #0f172a;
+}
+
+/* Pseudo-class: active */
+.effect-btn:active {
+    transform: scale(0.95);
+}
+
+/* Visible focus state for keyboard navigation */
+.effect-btn:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 4px;
+}

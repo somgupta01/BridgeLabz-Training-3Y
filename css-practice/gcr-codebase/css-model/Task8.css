@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 35px 15px;
+}
+
+/* The outer layer demonstrates margin */
+.margin-layer {
+    background: #fef08a;
+    margin: 20px;
+    padding: 25px;
+    outline: 2px dashed #ca8a04;
+}
+
+.layer-label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Border surrounds the padding and content */
+.border-layer {
+    border: 8px solid #2563eb;
+    background: #bfdbfe;
+    padding: 20px;
+}
+
+/* Padding is the space around the content */
+.padding-layer {
+    padding: 20px;
+    background: #bbf7d0;
+}
+
+/* Actual content area */
+.content-layer {
+    padding: 15px;
+    background: white;
+    text-align: center;
+    border: 1px solid #16a34a;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.comparison-card {
+    max-width: 100%;
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #cbd5e1;
+}
+
+.default-box {
+    box-sizing: content-box;
+    width: 200px;
+    max-width: 100%;
+    padding: 15px;
+    border: 5px solid #dc2626;
+    background: #fee2e2;
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    max-width: 100%;
+    padding: 15px;
+    border: 5px solid #15803d;
+    background: #dcfce7;
+}
+
+.comparison-card p {
+    line-height: 1.6;
+}

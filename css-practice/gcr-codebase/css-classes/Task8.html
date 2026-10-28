@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="Task8.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box-Sizing Comparison</h1>
+    </header>
+
+    <main class="container">
+        <section class="comparison-card">
+            <h2>Content-Box</h2>
+            <div class="content-box">
+                Width: 200px
+            </div>
+            <p>
+                Padding and border are added outside the declared content
+                width. Total width becomes 250px.
+            </p>
+        </section>
+
+        <section class="comparison-card">
+            <h2>Border-Box</h2>
+            <div class="border-box">
+                Width: 200px
+            </div>
+            <p>
+                Padding and border are included inside the declared width.
+                Total width remains 200px.
+            </p>
+        </section>
+    </main>
+
+    <footer>Understanding the CSS Box Model</footer>
+</body>
+</html>

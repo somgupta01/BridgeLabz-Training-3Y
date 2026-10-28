@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+header, footer {
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: #0f172a;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+.comparison-item {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+}
+
+.comparison-item img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: filter 0.4s ease;
+}
+
+/* Apply filter to the second image */
+.filtered-image {
+    filter: brightness(55%) contrast(120%);
+}
+
+/* Restore the original look on hover */
+.comparison-item:hover .filtered-image {
+    filter: none;
+}
+
+figcaption {
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+    }
+
+    .comparison-item img {
+        height: 250px;
+    }
+}

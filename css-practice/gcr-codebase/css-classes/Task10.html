@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini User Interface</title>
+    <link rel="stylesheet" href="Task10.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>My Mini Dashboard</h1>
+        <p>A simple and responsive user interface</p>
+    </header>
+
+    <main class="main-container">
+        <section class="main-card">
+            <div class="card-image">
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                    alt="Laptop on a workspace">
+            </div>
+
+            <div class="card-content">
+                <h2>Welcome Back!</h2>
+                <p>Enter your details to get started with your dashboard.</p>
+
+                <form class="login-form" action="#" method="get">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username"
+                           placeholder="Enter username" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter email" required>
+
+                    <div class="button-group">
+                        <button class="btn primary" type="submit">Continue</button>
+                        <button class="btn secondary" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Mini Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>

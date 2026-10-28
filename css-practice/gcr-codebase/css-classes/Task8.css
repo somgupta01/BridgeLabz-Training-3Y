@@ -1,0 +1,80 @@
+
+/* Set a consistent default for the page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header, footer {
+    padding: 22px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+.container {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 35px 20px;
+}
+
+.comparison-card {
+    width: 320px;
+    max-width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #cbd5e1;
+}
+
+.comparison-card h2 {
+    text-align: center;
+}
+
+/* Explicitly use content-box for comparison */
+.content-box {
+    box-sizing: content-box;
+    width: 200px;
+    max-width: 100%;
+    padding: 20px;
+    border: 5px solid #dc2626;
+    background: #fee2e2;
+    text-align: center;
+}
+
+/* Padding and border are included in the declared width */
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    max-width: 100%;
+    padding: 20px;
+    border: 5px solid #15803d;
+    background: #dcfce7;
+    text-align: center;
+}
+
+.comparison-card p {
+    line-height: 1.7;
+}
+
+/* Stack the cards on small screens */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .comparison-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}

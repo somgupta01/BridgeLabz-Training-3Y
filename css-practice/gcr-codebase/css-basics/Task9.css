@@ -1,0 +1,74 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #fef3c7;
+    color: #292524;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    background-color: #7f1d1d;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.newspaper {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fffdf5;
+    line-height: 1.8;
+    text-align: justify;
+
+    /* Arrange the article text into three columns. */
+    column-count: 3;
+    column-gap: 35px;
+}
+
+.headline {
+    column-span: all;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.article-image {
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: 5px 15px 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #7f1d1d;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .newspaper {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .newspaper {
+        column-count: 1;
+        padding: 18px;
+    }
+
+    .headline {
+        font-size: 1.5rem;
+    }
+}
