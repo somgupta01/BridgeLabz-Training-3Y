@@ -1,0 +1,30 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fc;
+}
+
+.pricing-card {
+  border: 1px solid #e1e5ee;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+.pro-card {
+  background-color: var(--bs-primary);
+  color: white;
+  border: 2px solid #0d6efd;
+}
+
+.feature-list li {
+  padding: 10px 0;
+}
+
+hr {
+  opacity: 0.2;
+}

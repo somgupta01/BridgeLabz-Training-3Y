@@ -1,0 +1,27 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.product-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+  height: 190px;
+  object-fit: cover;
+}
+
+.price {
+  color: #198754;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,23 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  padding: 110px 0;
+  color: #172554;
+}
+
+.hero .btn {
+  transition: transform 0.3s;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+}
+
+section h3 {
+  font-weight: bold;
+  color: #0d6efd;
+}

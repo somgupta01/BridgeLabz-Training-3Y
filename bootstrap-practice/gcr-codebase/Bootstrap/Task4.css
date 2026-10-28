@@ -1,0 +1,27 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+}
+
+.restaurant-header {
+  background: linear-gradient(135deg, #9a3412, #ea580c);
+}
+
+.food-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.table {
+  background-color: white;
+}
+
+.list-group-item {
+  padding: 15px;
+}
+
+footer {
+  margin-top: 20px;
+}

@@ -1,0 +1,26 @@
+
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+.summary-well {
+  border: 1px solid #dee2e6;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-header {
+  border-bottom: 1px solid #eee;
+}
+
+.alert {
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 20px;
+}

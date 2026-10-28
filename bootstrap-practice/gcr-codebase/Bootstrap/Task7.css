@@ -1,0 +1,27 @@
+
+body {
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.tracker-header {
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+}
+
+.task-panel {
+  max-width: 800px;
+}
+
+.list-group-item {
+  padding: 18px;
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #f0f4ff;
+}
+
+.completed-box {
+  background-color: #e8f7ee;
+  border: 1px solid #b8e5c8;
+}
